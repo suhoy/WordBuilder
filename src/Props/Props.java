@@ -26,10 +26,10 @@ public class Props {
     public ArrayList<String> imageNames;
     public boolean isThereImages = true;
     public ArrayList<String> attachmentNames;
-    public boolean isThereAttachment = true;
+    public boolean isThereAttachment = false;
     private Properties prop;
 
-    public Props(String config, String template, String imageNamesPaths, String attachmentNamesPaths, String outFolder, String outFileName) {
+    public Props(String config, String template, String imageNamesPaths, String attachmentNamesPaths, String outFolder, String outFileName, boolean addAtach) {
 
         this.template = template;
         //images load
@@ -46,6 +46,7 @@ public class Props {
         //System.out.println("this.attachmentNames="+this.attachmentNames.toString());
         this.outFolder = outFolder;
         this.outFileName = outFileName;
+        this.isThereAttachment = addAtach;
 
         try {
             //config load

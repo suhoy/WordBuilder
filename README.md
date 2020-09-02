@@ -6,12 +6,13 @@ Java 8 with free version Aspose words (aspose-words-18.1-jdk16.jar)
 ***-config***		Path to config file  
 ***-template***		Path to template file  
 ***-imagesFolder***	Images folder  
+***-addAttach***	Is there attachments  
 ***-attachFolder***	Attachments folder  
 ***-outFolder***	Output folder  
 ***-outName***		Output file name with no extension  
 
 ### Start example
-java -jar -config C:\config.txt -template C:\template1.docx -imagesFolder C:\images -attachFolder C:\attachs -outFolder C:\out -outName out1
+java -jar -config C:\config.txt -template C:\template1.docx -imagesFolder C:\images -addAttach true -attachFolder C:\attachs -outFolder C:\out -outName out1
 
 ### Config example
 image.wight=450  

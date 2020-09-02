@@ -26,6 +26,7 @@ public class WordBuilder {
      * -config config.txt
      * -template template1.docx
      * -imagesFolder C:\images
+     * -addAttach false
      * -attachFolder C:\attachs
      * -outFolder C:\out
      * -outName out1
@@ -40,7 +41,8 @@ public class WordBuilder {
                     args.get("imagesFolder").get(0),
                     args.get("attachFolder").get(0),
                     args.get("outFolder").get(0),
-                    args.get("outName").get(0)
+                    args.get("outName").get(0),
+                    Boolean.parseBoolean(args.get("addAttach").get(0))
             );
 
             Builder b = new Builder(args.get("template").get(0), p);
@@ -91,6 +93,7 @@ public class WordBuilder {
         System.out.println("Config: " + args.get("config").get(0));
         System.out.println("Template: " + args.get("template").get(0));
         System.out.println("Images Folder: " + args.get("imagesFolder").get(0));
+        System.out.println("Is there attachs: " + args.get("addAttach").get(0));
         System.out.println("Attachment Folder: " + args.get("attachFolder").get(0));
         System.out.println("Output Folder: " + args.get("outFolder").get(0));
         System.out.println("Output Name: " + args.get("outName").get(0));
