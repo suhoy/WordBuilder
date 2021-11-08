@@ -1,6 +1,7 @@
 # WordBuilder
 Create docx report from template with pics and attachments  
 Java 8 with free version Aspose words (aspose-words-18.1-jdk16.jar)  
+During free Aspose version template have limit in 500 line breaks
 
 ### Arguments
 ```java
