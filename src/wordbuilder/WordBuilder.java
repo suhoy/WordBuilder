@@ -41,7 +41,8 @@ public class WordBuilder {
                     args.get("imagesFolder").get(0),
                     args.get("attachFolder").get(0),
                     args.get("outFolder").get(0),
-                    args.get("outName").get(0),
+                    String.join(" ", args.get("outName")),
+                    //args.get("outName").get(0),
                     Boolean.parseBoolean(args.get("addAttach").get(0))
             );
 
