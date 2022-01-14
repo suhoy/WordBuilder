@@ -33,6 +33,7 @@ public class WordBuilder {
      */
     public static void main(String[] arg) {
         try {
+            System.out.println("\n==========WordBuilder started==========");
             ReadParams(arg);
             //String config, String template, ArrayList imageNames, ArrayList attachmentNames, String outFolder, String outFileName
             Props p = new Props(
@@ -62,8 +63,10 @@ public class WordBuilder {
 
         } catch (Exception ex) {
             ex.printStackTrace();
+            System.out.println("\n==========WordBuilder finished==========");
             System.exit(1);
         }
+        System.out.println("\n==========WordBuilder finished==========");
         System.exit(0);
     }
 
